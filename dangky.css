@@ -1,0 +1,133 @@
+*{margin: 0;padding: 0}
+.dangky {
+    width: 600px;
+    margin: 30px auto;
+    background: #f4f6f8;    
+    border-radius: 10px;
+    height: 800px;
+}
+.choose {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+}
+.choose>a:first-child {
+    border-right: 1px solid #ececec;
+}
+.choose>a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    font-family: sans-serif;
+    border-bottom: 1px solid #ececec;
+    width: 50%;
+    text-align: center;
+    height: 30px;
+}
+.dangky>p {
+    text-align: center;
+    font-family: sans-serif;
+}
+.dangky>form {
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.dangky>form>label {
+    font-size: 20px;
+    font-family: sans-serif;
+    display: inline-block;
+    margin: 15px 0 10px 0px;
+}
+.dangky>form>input:not(:last-of-type) {
+    width: 94%;
+    height: 50px;
+    font-size: 15px;
+    border: 1px;
+    border-radius: 5px;
+}
+.dangky>form>label i {
+    color: red;
+}
+.dangky input[type="submit"] {
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    padding: 8px;
+    background: #329c6b;
+    border: 1px solid #329c6b;
+    border-radius: 5px;
+}
+.dangky span {
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    margin: 0 auto;
+    display: block;
+    width: 115px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 5px 10px;
+    position: relative;
+
+}
+.dangky span:before {
+    content: "";
+    width: 159%;
+    left: -215px;
+    height: 1px;
+    background: #eee;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.dangky span:after {
+    content: "";
+    width: 140%;
+    right: -190px;
+    height: 1px;
+    background: #eee;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.option_login {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 20px auto;
+}
+.fa.fa-facebook {
+    background: #0657a3;
+    color: white;
+    padding: 10px;
+    border: 1px solid #0657a3;
+}
+.fa.fa-facebook>b {
+    padding-left: 5px;
+    border-left: 1px solid #ecececa8;
+    margin-left: 5px;
+}
+.fa.fa-google-plus {
+    background: #dc3545;
+    color: white;
+    padding: 10px 17px;
+    border: #dc3545;
+}
+.fa.fa-google-plus>b {
+    padding-left: 5px;
+    border-left: 1px solid #ecececa8;
+    margin-left: 5px;
+}
+.choose .change1{
+    color: #ececec;
+}
+.choose .change2{
+    color: black;
+    border-bottom:1px solid #3bb77e;
+}
+.choose a:first-child:hover{
+    color: #3bb77e;
+}

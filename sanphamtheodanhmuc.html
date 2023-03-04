@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="sanphamtheodanhmuc.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+	
+	<!-- code phần menu -->
+	<div class="top">
+		<div class="header1">
+			<div class="logo">
+				<img src="image/logo1.png" alt="">
+			</div>
+			<div class="search">
+				<input type="search" placeholder="Nhập tên sản phẩm cần tìm?">
+				<a href="#"><div class="fa fa-search"></div></a>
+			</div>
+			<div class="hotline">
+				<div class="icon"><div class="fa fa-phone"></div></div>
+				<div class="contact">
+					<p>Hotline</p>
+					<b>1900 6750</b>
+				</div>
+				
+			</div>
+			<div class="account">
+				<div class="icon"><div class="fa fa-user"></div></div>
+				<p>Tài khoản</p>
+			</div>
+			<div class="cart">
+				<div class="icon"><div class="fa fa-cart-plus"></div></div>
+				<p>Giỏ hàng</p>
+			</div>
+			<div class="soluong">0</div>
+
+		</div>
+		<div class="header2">
+			<ul>
+				<li><a href="">Trang Chủ</a></li>
+				<li><a href="">Sản Phẩm <span class="fa fa-angle-down"></span></a>
+					<div class="include">
+						<div class="danhsach">
+							<div class="item1">
+								<h4>Thịt, cá, trứng, rau</h4>
+								<ul>
+									<li><a href="">Thịt các loại</a></li>
+									<li><a href="">Cá, hải sản</a></li>
+									<li><a href="">Trứng gà, vịt, cút</a></li>
+									<li><a href="">Rau lá các loại</a></li>
+									<li><a href="">Rau củ các loại</a></li>
+									<li><a href="">Trái cây các loại</a></li>
+								</ul>
+							</div>
+							<div class="item1">
+								<h4>Hàng đông mát</h4>
+								<ul>
+									<li><a href="">Kem các loại</a></li>
+									<li><a href="">Bánh đông, bánh tươi</a></li>
+									<li><a href="">Chả giò, cá-bò viên</a></li>
+									<li><a href="">Há cảo,sủi cảo</a></li>
+									<li><a href="">Thịt, cá đông lạnh</a></li>
+									<li><a href="">Thực phẩm làm sẵn</a></li>
+								</ul>
+							</div>
+							<div class="item1">
+								<h4>Mì, miến, cháo, phở</h4>
+								<ul>
+									<li><a href="">Cháo các loại</a></li>
+									<li><a href="">Cháo canh, bánh canh</a></li>
+									<li><a href="">Miến hương</a></li>
+									<li><a href="">Miến gạo</a></li>
+									<li><a href="">Miến dong</a></li>
+								</ul>
+							</div>
+							<div class="item1">
+								<h4>Gạo, bột, đồ khô</h4>
+								<ul>
+									<li><a href="">Gạo các loại</a></li>
+									<li><a href="">Bột nếp</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="img">
+							<img src="image/logoFood.png" alt="">
+						</div>
+					</div>
+				</li>
+				<li><a href="">Tin Tức <span class="fa fa-angle-down"></span></a>
+					<div class="box_new">
+						<div class="new">
+							<div class="item2"></div>
+							<p>Công thức nấu ăn</p>
+						</div>
+						<div class="new">
+							<div class="item2"></div>
+							<p>Mẹo vặt bếp núc</p>
+						</div>
+						<div class="new">
+							<div class="item2"></div>
+							<p>Đặc sản vùng miền</p>
+						</div>
+						<div class="new">
+							<div class="item2"></div>
+							<p>Địa điểm ăn uống</p>
+						</div>
+						<div class="new">
+							<div class="item2"></div>
+							<p>Chế độ ăn uống</p>
+						</div>
+						
+					</div>
+				</li>
+				<li><a href="">Giới Thiệu</a></li>
+				<li><a href="">Liên Hệ</a></li>
+			</ul>
+		</div>
+	</div>
+
+<!-- code tab option -->
+	<div class="tab">
+		<a href="#">Trang chủ</a>
+		<span> / Thịt, cá, trứng, rau</span>
+	</div>
+	<!-- code nội dung -->
+	<div class="danhmuc">
+		<div class="filter">
+			<h3>Bộ Lọc Sản Phẩm</h3>
+			<div class="item_filter">
+				<h4>Loại sản phẩm</h4>
+				<label><input type="radio" name="radi" value="canuocngot" onchange="window.location.href='tieuchi1='+$(this).val()">Cá nước ngọt</label>
+				<label><input type="radio" name="radi"value="suonbo"onchange="window.location.href='tieuchi1='+$(this).val()">Sườn bò</label>
+				<label><input type="radio" name="radi"value="thitbo"onchange="window.location.href='tieuchi1='+$(this).val()">Thịt bò</label>
+				<label><input type="radio" name="radi"value="tieuden"onchange="window.location.href='tieuchi1='+$(this).val()">Tiêu đen</label>
+				<label><input type="radio" name="radi"value="trung"onchange="window.location.href='tieuchi1='+$(this).val()">Trứng</label>
+			</div>
+			<div class="item_filter">
+				<h4>Giá sản phẩm</h4>
+				<label><input type="radio" name="radi" value="duoi100k"onchange="window.location.href='tieuchi2='+$(this).val()">Giá dưới 100.000đ</label>
+				<label><input type="radio" name="radi"value="100k-200k"onchange="window.location.href='tieuchi2='+$(this).val()">100.000đ-200.000đ</label>
+				<label><input type="radio" name="radi"value="300k-500k"onchange="window.location.href='tieuchi2='+$(this).val()">300.000đ-500.000đ</label>
+				<label><input type="radio" name="radi"value="500k-1000k"onchange="window.location.href='tieuchi2='+$(this).val()">500.000đ-1.000.000đ</label>
+				<label><input type="radio" name="radi"value="trên 1000k"onchange="window.location.href='tieuchi2='+$(this).val()">Giá trên 1.000.000đ</label>
+			</div>
+			<div class="item_filter">
+				<h4>Cân nặng</h4>
+				<label><input type="radio" name="radi" value="250g"onchange="window.location.href='tieuchi3='+$(this).val()">250 gram</label>
+				<label><input type="radio" name="radi"value="500g"onchange="window.location.href='tieuchi3='+$(this).val()">500 gram</label>
+				<label><input type="radio" name="radi"value="750g"onchange="window.location.href='tieuchi3='+$(this).val()">750 gram</label>
+				<label><input type="radio" name="radi"value="1kg"onchange="window.location.href='tieuchi3='+$(this).val()">1kg</label>
+				<label><input type="radio" name="radi"value="2kg"onchange="window.location.href='tieuchi3='+$(this).val()">2kg</label>
+			</div>
+		</div>
+		<div class="right_content">
+			<p>Thit, cá, trứng, rau</p>
+			<span>Ngày nay, thịt bò được tẩm màu để làm tăng độ bắt mắt hoặc các loại thịt heo giả bò được bán tràn lan trên thị trường. Để tránh mua nhầm những loại thực phẩm bẩn này, bạn nên đến các siêu thị, cửa hàng thực phẩm lớn hoặc đặt mua online nhanh chóng tại Wolf Food để nhận ngay những miếng thịt bò tươi ngon tự nhiên, đậm đà và an toàn cho sức khỏe với giá phải chăng cùng dịch vụ giao hàng nhanh chóng tận nơi.</span>
+			<div class="right_slide">
+				<img src="https://bizweb.dktcdn.net/100/449/944/themes/855700/assets/cat-banner-1.jpg?1675329786723" alt="" class="display">
+				<img src="https://bizweb.dktcdn.net/100/449/944/themes/855700/assets/cat-banner-2.jpg?1675329786723" alt="">
+				<div class="fa fa-chevron-left"></div>
+	            <div class="fa fa-chevron-right"></div>
+			</div>
+			<div class="sapxep">
+				<h4>Xếp theo</h4>
+				<label><input type="radio" name="radi1"value="a-z"onchange="window.location.href='tieuchi4='+$(this).val()">Tên A-Z</label>
+				<label><input type="radio" name="radi1"value="a-z"onchange="window.location.href='tieuchi4='+$(this).val()">Tên Z-A</label>
+				<label><input type="radio" name="radi1"value="a-z"onchange="window.location.href='tieuchi4='+$(this).val()">Giá thấp đến cao</label>
+				<label><input type="radio" name="radi1"value="a-z"onchange="window.location.href='tieuchi4='+$(this).val()">Giá cao xuống thấp</label>
+			</div>
+			<div class="list_danhmuc">
+				<div class="item_new">
+					<a href="#">
+						<img src="image/hop-30-trung-cut-tuoi-tfood-30-trung-202112271006004018.jpg" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Hộp 30 trứng cút tươi V.Farm</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/fish.jpg" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Đầu cá hồi tươi túi 1kg</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/tieu.jpg" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Tiêu đen xay Natas hũ 55g</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/tieuphuquoc.jpg" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Tiêu đen xay phú quốc</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/meat.jpg" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Thịt bò Úc tươi khay 250g</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/thitbo.webp" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Thăn bò tươi 88 khay 250g</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/vaibo.webp" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Vai bò Úc tươi khay 250g</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/vunbo.webp" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Vụn bò Úc tươi khay 250g</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/trasua.jpeg" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Trà sữa chân châu đường đen</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/trasua.jpeg" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Trà sữa chân châu đường đen</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/trasua.jpeg" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Trà sữa chân châu đường đen</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+				<div class="item_new">
+					<a href="#">
+						<img src="image/trasua.jpeg" alt="">
+					</a>
+					<span>Sản phẩm mới</span>
+					<a href="#">
+						<p>Trà sữa chân châu đường đen</p>
+					</a>
+					<div class="mount">
+						<p>26.500đ <span>30.000đ</span></p>
+						<div class="fa fa-cart-plus"></div>
+					</div>
+					<small>32%</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- code footer -->
+<div class="group_footer">
+	<div class="footer">
+	<div class="footer1">
+		<div class="item_footer1">
+			<img src="image/lich.png" alt="">
+			<p>Đặt online giao tận nhà đúng giờ</p>
+		</div>
+		<div class="item_footer1">
+			<img src="image/lich1.png" alt="">
+			<p>Đổi trả sản phẩm trong 7 ngày</p>
+		</div>
+		<div class="item_footer1">
+			<img src="image/lich3.png" alt="">
+			<p>Sản phẩm sạch tại vườn</p>
+		</div>
+	</div>
+	<div class="footer2">
+		<div class="item_footer21">
+			<img src="image/logo2.png" alt="">
+			<div class="vitri">
+				<img src="image/vitri.png" alt="">
+				<p>Số 70 Lữ Gia - Phường 15 - Quận 11 - TP Hồ Chí Minh</p>
+			</div>
+			<span>
+				Thứ 2 - Thứ 6: 8:00-17:00 Thứ 7: 8:00 – 12:00
+			</span>
+		</div>
+		<div class="item_footer22">
+			<h5>Hỗ trợ khách hàng</h5>
+			<div class="phone">
+				<img src="image/phone.png" alt="">
+				<div class="item_phone">
+					<p>1900 6750</p>
+					<span>Thứ 2 - Thứ 7: 8:00 - 21:00</span>
+				</div>
+			</div>
+			<div class="email">
+				<img src="image/mail.png" alt="">
+				<p>support@sapo.vn</p>
+			</div>
+			<div class="contact">
+				<div class="fa fa-facebook"></div>
+				<div class="fa fa-twitter"></div>
+				<div class="fa fa-youtube-play"></div>
+				<div class="fa fa-instagram"></div>
+			</div>
+		</div>
+		<div class="item_footer23">
+			<h5>Danh mục</h5>
+			<ul>
+				<li><a href="#">Thịt, cá, trứng, rau</a></li>
+				<li><a href="#">Hàng đông mát</a></li>
+				<li><a href="#">Mì, miến, cháo, phở</a></li>
+				<li><a href="#">Gạo, bột, đồ khô</a></li>
+				<li><a href="#">Dầu ăn, nước chấm, gia vị</a></li>
+				<li><a href="#">Sữa các loại</a></li>
+				<li><a href="#">Đồ uống các loại</a></li>
+				<li><a href="#">Bánh kẹo các loại</a></li>
+			</ul>
+		</div>
+		<div class="item_footer23">
+			<h5>Mục ẩm thực</h5>
+			<ul>
+				<li><a href="#">Công thức nấu ăn</a></li>
+				<li><a href="#">Mẹo vặt bếp núc</a></li>
+				<li><a href="#">Đặc sản vùng miền</a></li>
+				<li><a href="#">Địa điểm ăn uống</a></li>
+				<li><a href="#">Chế độ ăn uống</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer3">
+		© Bản quyền thuộc về<b>Wolf Themes </b> | Cung cấp bởi Sapo
+	</div>
+</div>
+</div>
+	<script src="sanphamtheodanhmuc.js"></script>
+</body>
+</html>

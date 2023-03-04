@@ -1,0 +1,114 @@
+*{margin: 0;padding: 0}
+.list_type {
+    width: 75%;
+    margin: 30px auto 0;
+}
+.list_type h4 {
+    font-size: 30px;
+    font-family: emoji;
+}
+.list_type ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.list_type ul li {
+    list-style: none;
+    padding: 20px 0;
+}
+.list_type ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    padding-bottom: 5px;
+}
+.list_news {
+    width: 75%;
+    margin: 90px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list_news .item_new {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.item_new img {
+    width: 100%;
+    border-radius: 5px;
+    height: 250px;
+    object-fit: cover;
+}
+.item_new p {
+    font-size: 18px;
+    font-family: system-ui;
+}
+.item_new span {
+    font-family: math;
+}
+.phantrang {
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.phantrang ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+.phantrang ul li {
+    list-style: none;
+    padding: 0 2px;
+}
+.phantrang ul li:not(:first-child, :last-child) a {
+    text-decoration: none;
+    padding: 11px 16px;
+    border-radius: 20px;
+    background: #f3f5f7;
+    color: black;
+    font-weight: bold;
+}
+
+.phantrang>ul>li>a.color{
+	color: white;
+	background: #3bb77e;
+}
+span.fa.fa-long-arrow-left,span.fa.fa-long-arrow-right {
+    color: black;
+    padding: 12px;
+    background: #f3f5f7;
+    border-radius: 20px;
+}
+.list_type ul li:hover a{
+	color: #3bb77e;
+	transition: 0.2s;
+}
+.list_type ul li a{
+	position: relative;
+}
+.list_type ul li a:after{
+	height: 2px;
+    background: #3bb77e;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    opacity: 0;
+}
+.list_type ul li:hover a:after{
+	animation: anima1 0.5s forwards;
+}
+@-webkit-keyframes anima1{
+	from{width:0%;opacity:0;}
+	to{width: 100%;opacity: 1;}
+}
+
